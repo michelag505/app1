@@ -5,16 +5,17 @@ import numpy as np
 # Funzione per visualizzare l'elenco dei futures
 def show_futures_list():
     futures_list = {
-        'RX1': 'Fixed-income security issued by the Federal Republic of Germany.',
-        'CO1': 'Price of Brent crude oil in the financial markets.',
-        'DU1': 'The German 2-year government bond, known as the "Schatz."',
-        'ES1': 'It represents a broad-based stock market index of 500 large companies listed on U.S. stock exchanges.',
-        'GC1': 'Price of gold.',
-        'NQ1': 'The Nasdaq 100 index.',
-        'TP1': 'It\'s associated with the Topix index.',
-        'TU2': 'It refers to the 2-year US Treasury bond.',
-        'TY1': '10-years US Treasury bond.',
-        'VG1': 'Euro Stoxx 50 index.'
+       'RX1': 'Highly liquid German government bond, considered a benchmark for fixed-income investments.',
+    'TY1': '10-year U.S. Treasury bond, representing a long-term, low-risk government debt instrument.',
+    'GC1': 'Gold, used as a store of value and a hedge against inflation and market volatility.',
+    'CO1': 'Price of Brent crude oil, a key global benchmark affected by geopolitical and market dynamics.',
+    'ES1': 'S&P 500 index, tracking 500 major U.S. companies across various sectors.',
+    'VG1': 'Euro Stoxx 50 index, representing 50 leading blue-chip stocks in the Eurozone.',
+    'NQ1': 'Nasdaq 100 index, composed mainly of large-cap technology and non-financial firms.',
+    'TP1': 'Topix index, reflecting the performance of Japanese stocks across multiple sectors.',
+    'DU1': '2-year German government bond ("Schatz"), a safe and liquid short-term investment.',
+    'TU2': '2-year U.S. Treasury bond, a short-term benchmark for risk-free government debt.'
+        
     }
 
     st.write("### List of Futures Used in the Replication Portfolio")
