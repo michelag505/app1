@@ -57,6 +57,19 @@ def main():
     # Espandi l'elenco dei futures
     with st.expander("List of Futures"):
         show_futures_list()
+    with st.expander("Introduction to the Indices"):
+        st.markdown("""
+        'RX1': 'Highly liquid German government bond, considered a benchmark for fixed-income investments.',
+    'TY1': '10-year U.S. Treasury bond, representing a long-term, low-risk government debt instrument.',
+    'GC1': 'Gold, used as a store of value and a hedge against inflation and market volatility.',
+    'CO1': 'Price of Brent crude oil, a key global benchmark affected by geopolitical and market dynamics.',
+    'ES1': 'S&P 500 index, tracking 500 major U.S. companies across various sectors.',
+    'VG1': 'Euro Stoxx 50 index, representing 50 leading blue-chip stocks in the Eurozone.',
+    'NQ1': 'Nasdaq 100 index, composed mainly of large-cap technology and non-financial firms.',
+    'TP1': 'Topix index, reflecting the performance of Japanese stocks across multiple sectors.',
+    'DU1': '2-year German government bond ("Schatz"), a safe and liquid short-term investment.',
+    'TU2': '2-year U.S. Treasury bond, a short-term benchmark for risk-free government debt.'
+    """)
 
     # Espandi la scelta dell'indice da replicare
     with st.expander("Choose Index to Replicate"):
