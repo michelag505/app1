@@ -4,7 +4,7 @@ import numpy as np
 
 # Funzione principale
 def main():
-    st.image('Logo.png')  # TITLE and Creator information
+    st.image('Logo_2.png')  # TITLE and Creator information
     st.write('\n')  # add spacing
     st.markdown('Discover CloneCapital! Our platform offers proprietary algorithms to create synthetic futures contracts that mirror the performance of leading market indices with remarkable accuracy.')
     st.write('\n')  # add spacing
