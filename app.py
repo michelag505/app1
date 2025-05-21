@@ -30,7 +30,7 @@ def main():
          """)
         st.write("The chart below visualizes how the returns of the indices have evolved over time.")
        
-        st.image("indici.png")
+        st.image("Logo.png")
 
     with st.expander("Overview of the Futures used in the Replication Portfolio"):
         st.markdown("""
