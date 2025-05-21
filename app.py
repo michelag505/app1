@@ -31,7 +31,7 @@ def main():
         st.write("Below is the plot showing the returns of the selected indices over time.")
         st.image("Logo.png")
 
-    with st.expander("Overview of the Futures"):
+    with st.expander("Overview of the Futures used in the Replication Portfolio"):
         st.markdown("""
 
         - **RX1**: Highly liquid German government bond, considered a benchmark for fixed-income investments.
