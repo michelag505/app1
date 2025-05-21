@@ -2,21 +2,6 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import numpy as np
 
-# Funzione per visualizzare l'elenco dei futures
-def show_futures_list():
-    futures_list = {
-       'RX1': 'Highly liquid German government bond, considered a benchmark for fixed-income investments.',
-    'TY1': '10-year U.S. Treasury bond, representing a long-term, low-risk government debt instrument.',
-    'GC1': 'Gold, used as a store of value and a hedge against inflation and market volatility.',
-    'CO1': 'Price of Brent crude oil, a key global benchmark affected by geopolitical and market dynamics.',
-    'ES1': 'S&P 500 index, tracking 500 major U.S. companies across various sectors.',
-    'VG1': 'Euro Stoxx 50 index, representing 50 leading blue-chip stocks in the Eurozone.',
-    'NQ1': 'Nasdaq 100 index, composed mainly of large-cap technology and non-financial firms.',
-    'TP1': 'Topix index, reflecting the performance of Japanese stocks across multiple sectors.',
-    'DU1': '2-year German government bond ("Schatz"), a safe and liquid short-term investment.',
-    'TU2': '2-year U.S. Treasury bond, a short-term benchmark for risk-free government debt.'
-        
-    }
 
     st.write("### List of Futures Used in the Replication Portfolio")
     for future_code, description in futures_list.items():
@@ -66,10 +51,7 @@ def main():
         - **DU1**: 2-year German government bond ("Schatz"), a safe and liquid short-term investment.
         - **TU2**: 2-year U.S. Treasury bond, a short-term benchmark for risk-free government debt.
     """)
-    # Espandi l'elenco dei futures
-    with st.expander("List of Futures"):
-        show_futures_list()
-    
+
     # Espandi la scelta dell'indice da replicare
     with st.expander("Choose Index to Replicate"):
         selected_index = st.selectbox("Select an index to replicate", ["MSCI World AC", "MSCI World", "BB Global Bond Agg", "HFRX Index", "Monster Index 1", "Monster Index 2"])
