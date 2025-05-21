@@ -26,7 +26,7 @@ def show_futures_list():
 def main():
     st.image('Logo.png')  # TITLE and Creator information
     st.write('\n')  # add spacing
-    st.markdown('Welcome to ReplicaPro! Our platform offers a unique way to invest in futures contracts that replicate the performance of key indices. Explore the potential of diversifying your portfolio with ease and precision.')
+    st.markdown('Discover CloneCapital! Our platform offers proprietary algorithms to create synthetic futures contracts that mirror the performance of leading market indices with remarkable accuracy.')
     st.write('\n')  # add spacing
     
     # Espandi l'introduzione
