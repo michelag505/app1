@@ -5,7 +5,7 @@ import numpy as np
 # Funzione per visualizzare l'elenco dei futures
 def show_futures_list():
     futures_list = {
-       *RX1*: 'Highly liquid German government bond, considered a benchmark for fixed-income investments.',
+       'RX1': 'Highly liquid German government bond, considered a benchmark for fixed-income investments.',
     'TY1': '10-year U.S. Treasury bond, representing a long-term, low-risk government debt instrument.',
     'GC1': 'Gold, used as a store of value and a hedge against inflation and market volatility.',
     'CO1': 'Price of Brent crude oil, a key global benchmark affected by geopolitical and market dynamics.',
