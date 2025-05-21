@@ -132,5 +132,5 @@ def main():
             st.write("Mean Turnover: Represents the average proportion of the portfolio that is traded over a given period.")
 
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     main()
