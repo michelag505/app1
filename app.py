@@ -32,8 +32,7 @@ def main():
     # Espandi l'introduzione
     with st.expander("About us"):
         st.write("""
-            Welcome to our emerging financial consultancy firm! We specialize in replicating various indices using futures contracts. We are a group of students from Politecnico di Milano who have developed this project with a passion for finance and technology. Our replicated portfolios are derived through the application of various models and advanced machine learning techniques, ensuring precision and effectiveness in our investment strategies.
-        """)
+            Founded in 2025 by four quantitative finance students from Politecnico di Milano, CloneCapital emerged from our shared vision to make sophisticated investment strategies accessible to everyone. Combining our academic expertise in financial modeling with a passion for technological innovation, we've created a platform that bridges the gap between institutional and retail investment capabilities.
 
     # Espandi i rendimenti degli indici
     with st.expander("Introduction to the Indices"):
