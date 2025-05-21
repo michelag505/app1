@@ -30,10 +30,15 @@ def main():
     st.write('\n')  # add spacing
     
     # Espandi l'introduzione
-    with st.expander("About us"):
+    with st.expander("About CloneCapital"):
         st.write("""
             Founded in 2025 by four quantitative finance students from Politecnico di Milano, CloneCapital emerged from our shared vision to make sophisticated investment strategies accessible to everyone. Combining our academic expertise in financial modeling with a passion for technological innovation, we've created a platform that bridges the gap between institutional and retail investment capabilities.
               """)
+        # Espandi l'obiettivo
+    with st.expander("Our Solution"):
+        st.write("""
+            CloneCapital offers a unique way to invest in futures contracts that replicate the performance of key indices with unprecedented precision. Our proprietary algorithm enables investors to diversify their portfolios through synthetic positions that track market indices without the traditional barriers to entry. Experience the future of index investing—designed by students who understand both the mathematical complexities of financial markets and the need for intuitive investment solutions.
+        """)
     # Espandi i rendimenti degli indici
     with st.expander("Introduction to the Indices"):
         st.markdown("""
