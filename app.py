@@ -42,7 +42,7 @@ def main():
     # Espandi i rendimenti degli indici
     with st.expander("Introduction to the Indices"):
         st.markdown("""
-            ### The indices we have focused on for replication are as follows:
+            {### The indices we have focused on for replication are as follows:
     'HFRX': 'HFRX Global Hedge Fund Index, a widely followed benchmark representing the performance of hedge fund strategies across the industry.',
     'MSCI World': 'MSCI World Index, tracking large and mid-cap equities across 23 developed markets worldwide.',
     'MSCI ACWI': 'MSCI All Country World Index, capturing both developed and emerging market equities across a broad global universe.',
