@@ -65,7 +65,9 @@ def main():
     -*CO1*: 'Price of Brent crude oil, a key global benchmark affected by geopolitical and market dynamics.',
     -*ES1*: 'S&P 500 index, tracking 500 major U.S. companies across various sectors.',
     -*VG1*: 'Euro Stoxx 50 index, representing 50 leading blue-chip stocks in the Eurozone.',
+    
     -*NQ1*: 'Nasdaq 100 index, composed mainly of large-cap technology and non-financial firms.',
+    
     -*TP1*: 'Topix index, reflecting the performance of Japanese stocks across multiple sectors.',
     -*DU1*: '2-year German government bond ("Schatz"), a safe and liquid short-term investment.',
     -*TU2*: '2-year U.S. Treasury bond, a short-term benchmark for risk-free government debt.'
