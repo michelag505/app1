@@ -29,7 +29,7 @@ def main():
         - **BBG Global Agg**: Bloomberg Global Aggregate Bond Index, a comprehensive benchmark for global investment-grade debt including government, corporate, and securitized bonds.
          """)
         st.write("The chart below visualizes how the returns of the indices have evolved over time.")
-        st.image("futures55.png")
+        st.image("indici.png")
 
     with st.expander("Overview of the Futures used in the Replication Portfolio"):
         st.markdown("""
