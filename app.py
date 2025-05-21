@@ -28,7 +28,7 @@ def main():
         - **MSCI ACWI**: MSCI All Country World Index, capturing both developed and emerging market equities across a broad global universe.
         - **BBG Global Agg**: Bloomberg Global Aggregate Bond Index, a comprehensive benchmark for global investment-grade debt including government, corporate, and securitized bonds.
          """)
-        st.write("Below is the plot showing the returns of the selected indices over time.")
+        st.write("The chart below visualizes how the returns of the indices have evolved over time.")
         st.image("Logo.png")
 
     with st.expander("Overview of the Futures used in the Replication Portfolio"):
@@ -45,6 +45,8 @@ def main():
         - **DU1**: 2-year German government bond ("Schatz"), a safe and liquid short-term investment.
         - **TU2**: 2-year U.S. Treasury bond, a short-term benchmark for risk-free government debt.
     """)
+        st.write("The chart below visualizes the futures used in the replicating portfolio.")
+        st.image("Logo.png")
 
     # Espandi la scelta dell'indice da replicare
     with st.expander("Choose Index to Replicate"):
