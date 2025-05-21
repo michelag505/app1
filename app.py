@@ -41,14 +41,14 @@ def main():
         """)
         # Espandi i rendimenti degli indici
     with st.expander("Introduction to the Indices"):
-        st.markdown("""
-            ### The indices we have focused on for replication are as follows:
-            -'HFRX': 'HFRX Global Hedge Fund Index, a widely followed benchmark representing the performance of hedge fund strategies across the industry.',
-    -'MSCI World': 'MSCI World Index, tracking large and mid-cap equities across 23 developed markets worldwide.',
-    -'MSCI ACWI': 'MSCI All Country World Index, capturing both developed and emerging market equities across a broad global universe.',
-    -'BBG Global Agg': 'Bloomberg Global Aggregate Bond Index, a comprehensive benchmark for global investment-grade debt including government, corporate, and securitized bonds.'
-        """)
-   
+    st.markdown("""
+        ### The indices we have focused on for replication are as follows:
+
+        - **HFRX**: HFRX Global Hedge Fund Index, a widely followed benchmark representing the performance of hedge fund strategies across the industry.
+        - **MSCI World**: MSCI World Index, tracking large and mid-cap equities across 23 developed markets worldwide.
+        - **MSCI ACWI**: MSCI All Country World Index, capturing both developed and emerging market equities across a broad global universe.
+        - **BBG Global Agg**: Bloomberg Global Aggregate Bond Index, a comprehensive benchmark for global investment-grade debt including government, corporate, and securitized bonds.
+    """)
         st.write("Below is the plot showing the returns of the selected indices over time.")
         st.image("Logo.png")
 
