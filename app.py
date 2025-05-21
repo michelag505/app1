@@ -46,7 +46,7 @@ def main():
         - **TU2**: 2-year U.S. Treasury bond, a short-term benchmark for risk-free government debt.
     """)
         st.write("The chart below visualizes the futures used in the replicating portfolio.")
-        st.image("Logo.png")
+        st.image("futures55.png")
 
     # Espandi la scelta dell'indice da replicare
     with st.expander("Choose Index to Replicate"):
