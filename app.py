@@ -2,11 +2,6 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import numpy as np
 
-
-    st.write("### List of Futures Used in the Replication Portfolio")
-    for future_code, description in futures_list.items():
-        st.write(f"*{future_code}:* {description}")
-
 # Funzione principale
 def main():
     st.image('Logo.png')  # TITLE and Creator information
