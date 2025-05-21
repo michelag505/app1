@@ -20,9 +20,9 @@ def main():
             CloneCapital offers a unique way to invest in futures contracts that replicate the performance of key indices with unprecedented precision. Our proprietary algorithm enables investors to diversify their portfolios through synthetic positions that track market indices without the traditional barriers to entry. Experience the future of index investing—designed by students who understand both the mathematical complexities of financial markets and the need for intuitive investment solutions.
         """)
         # Espandi i rendimenti degli indici
-    with st.expander("Introduction to the Indices"):
+    with st.expander("Overview of the Indices"):
         st.markdown("""
-        ### The indices we have focused on for replication are as follows:
+        ### We base our replication strategy on the following indices:
         - **HFRX**: HFRX Global Hedge Fund Index, a widely followed benchmark representing the performance of hedge fund strategies across the industry.
         - **MSCI World**: MSCI World Index, tracking large and mid-cap equities across 23 developed markets worldwide.
         - **MSCI ACWI**: MSCI All Country World Index, capturing both developed and emerging market equities across a broad global universe.
@@ -31,9 +31,8 @@ def main():
         st.write("Below is the plot showing the returns of the selected indices over time.")
         st.image("Logo.png")
 
-    with st.expander("Overview of Asset Classes and Indices"):
+    with st.expander("Overview of the Futures"):
         st.markdown("""
-        ### The instruments used in our analysis include the following:
 
         - **RX1**: Highly liquid German government bond, considered a benchmark for fixed-income investments.
         - **TY1**: 10-year U.S. Treasury bond, representing a long-term, low-risk government debt instrument.
