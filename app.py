@@ -5,16 +5,16 @@ import numpy as np
 # Funzione per visualizzare l'elenco dei futures
 def show_futures_list():
     futures_list = {
-       'RX1': 'Highly liquid German government bond, considered a benchmark for fixed-income investments.',
-    'TY1': '10-year U.S. Treasury bond, representing a long-term, low-risk government debt instrument.',
-    'GC1': 'Gold, used as a store of value and a hedge against inflation and market volatility.',
-    'CO1': 'Price of Brent crude oil, a key global benchmark affected by geopolitical and market dynamics.',
-    'ES1': 'S&P 500 index, tracking 500 major U.S. companies across various sectors.',
-    'VG1': 'Euro Stoxx 50 index, representing 50 leading blue-chip stocks in the Eurozone.',
-    'NQ1': 'Nasdaq 100 index, composed mainly of large-cap technology and non-financial firms.',
-    'TP1': 'Topix index, reflecting the performance of Japanese stocks across multiple sectors.',
-    'DU1': '2-year German government bond ("Schatz"), a safe and liquid short-term investment.',
-    'TU2': '2-year U.S. Treasury bond, a short-term benchmark for risk-free government debt.'
+       -'RX1': 'Highly liquid German government bond, considered a benchmark for fixed-income investments.',
+    -'TY1': '10-year U.S. Treasury bond, representing a long-term, low-risk government debt instrument.',
+    -'GC1': 'Gold, used as a store of value and a hedge against inflation and market volatility.',
+    -'CO1': 'Price of Brent crude oil, a key global benchmark affected by geopolitical and market dynamics.',
+    -'ES1': 'S&P 500 index, tracking 500 major U.S. companies across various sectors.',
+    -'VG1': 'Euro Stoxx 50 index, representing 50 leading blue-chip stocks in the Eurozone.',
+    -'NQ1': 'Nasdaq 100 index, composed mainly of large-cap technology and non-financial firms.',
+    -'TP1': 'Topix index, reflecting the performance of Japanese stocks across multiple sectors.',
+    -'DU1': '2-year German government bond ("Schatz"), a safe and liquid short-term investment.',
+    -'TU2': '2-year U.S. Treasury bond, a short-term benchmark for risk-free government debt.'
         
     }
 
@@ -43,12 +43,12 @@ def main():
     with st.expander("Introduction to the Indices"):
         st.markdown("""
             ### The indices we have focused on for replication are as follows:
-            - *MSCI World All Country*: This index captures large and mid-cap representation across 23 developed markets and 27 emerging markets countries, offering a comprehensive view of both developed and emerging equity markets worldwide.
-            - *MSCI World*: This index captures large and mid-cap representation across 23 developed markets, providing insight into the performance of the global developed equity market, excluding emerging markets.
-            - *BB Global Bond Agg*: The Bloomberg Global Aggregate Bond Index is a flagship measure of global investment-grade debt from 24 local currency markets, providing a broad-based exposure to the global bond market.
-            - *HFRX Index*: This index is designed to be representative of the overall composition of the hedge fund universe, offering insight into the performance of various hedge fund strategies.
-            - *Monster Index 1*: A custom index that is a linear combination of the above indices with weights [0.25, 0, 0.25, 0.5], providing a diversified blend of equities, bonds, and alternative investments.
-            - *Monster Index 2*: Another custom index that is a linear combination of the above indices with weights [0.05, 0.4, 0.3, 0.25], offering a different diversified investment approach.
+            - 'HFRX': 'HFRX Global Hedge Fund Index, a widely followed benchmark representing the performance of hedge fund strategies across the industry.',
+    -'MSCI World': 'MSCI World Index, tracking large and mid-cap equities across 23 developed markets worldwide.',
+    -'MSCI ACWI': 'MSCI All Country World Index, capturing both developed and emerging market equities across a broad global universe.',
+    -'BBG Global Agg': 'Bloomberg Global Aggregate Bond Index, a comprehensive benchmark for global investment-grade debt including government, corporate, and securitized bonds.'
+            - 'Monster Index 1': A custom index that is a linear combination of the above indices with weights [0.25, 0, 0.25, 0.5], providing a diversified blend of equities, bonds, and alternative investments.
+            - 'Monster Index 2': Another custom index that is a linear combination of the above indices with weights [0.05, 0.4, 0.3, 0.25], offering a different diversified investment approach.
         """)
         st.write("Below is the plot showing the returns of the selected indices over time.")
         st.image("Logo.png")
