@@ -26,7 +26,7 @@ def main():
         - **MSCI World**: MSCI World Index, tracking large and mid-cap equities across 23 developed markets worldwide.
         - **BBG Global Agg**: Bloomberg Global Aggregate Bond Index, a comprehensive benchmark for global investment-grade debt including government, corporate, and securitized bonds.
         - **Monster Index 1**: Custom index constructed as a weighted linear combination of the listed indices, using weights [1/3, 1/3, 1/3], offering a diversified investment opportunity.
-        - **Monster Index 2**: Custom index constructed as a weighted linear combination of the listed indices, using weights [0.25, 0.5, 0.25], offering a diversified investment opportunity.
+        - **Monster Index 2**: Custom index constructed as a weighted linear combination of the listed indices, using weights [1/4, 1/2, 1/4], offering a diversified investment opportunity.
          """)
         st.write("The chart below visualizes how the returns of the indices have evolved over time.")
        
