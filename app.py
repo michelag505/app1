@@ -79,10 +79,9 @@ def main():
                 amount_invested = investment_amount * proportion
                 st.write(f"*{future_code}:* {amount_invested:.2f}")
 
-            
 
             # Mostra il grafico dei rendimenti dell'indice scelto e della replica
-            if selected_index == "MSCI World ":
+            if selected_index == "MSCI World":
                 st.image("MSCIworld.png")
                 st.write("Tracking Error: 3.81%")
                 st.write("Information Ratio: 0.01")
@@ -107,8 +106,8 @@ def main():
 
             # Spiegazione breve dei termini
             st.write("\n")
-            st.write("Tracking Error: Measures the deviation of the replication portfolio's returns from the target index's returns.")
-            st.write("Information Ratio: Indicates the risk-adjusted return of the replication portfolio compared to the target index.")
+            st.write("Tracking Error: Quantifies how closely the replication portfolio follows the benchmark index by measuring the standard deviation of the difference in their returns over time.")
+            st.write("Information Ratio: Evaluates the performance of the replication portfolio relative to the benchmark by dividing the excess return by the tracking error, reflecting how efficiently the portfolio generates active returns.")
 
 if __name__ == "__main__":
     main()
