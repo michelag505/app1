@@ -52,7 +52,7 @@ def main():
 
     # Espandi la scelta dell'indice da replicare
     with st.expander("Choose Index to Replicate"):
-        selected_index = st.selectbox("Select an index to replicate", [ "MSCI World", "BB Global Bond Agg", "HFRX Index", "MonsterIndex 1", "MonsterIndex 2"])
+        selected_index = st.selectbox("Select an index to replicate", [ "MSCI World", "BB Global Bond Agg", "HFRX Index", "Monster Index 1", "Monster Index 2"])
 
         st.write(f"## Replication of {selected_index}")
         
@@ -94,25 +94,22 @@ def main():
                 st.image("HFRLX_ELASTIC_COMPARISON.png")
                 st.write("Mean Tracking Error: 4.72%")
                 st.write("Information Ratio: -0.77")
-            elif selected_index == "MonsterIndex 1":
+            elif selected_index == "Monster Index 1":
                 st.image("MONSTER1_LASSO_PREDICTION.png")
                 st.write("Mean Tracking Error: 3.34%")
                 st.write("Information Ratio: -0.13")
-            elif selected_index == "MonsterIndex 2":
+            elif selected_index == "Monster Index 2":
                 st.image("MONSTER2_LASSO_COMPARISON.png")
                 st.write("Mean Tracking Error: 0.030")
                 st.write("Information Ratio: -0.485")
 
             # Calcola e mostra il "Mean Turnover" moltiplicato per l'importo investito
-            mean_turnover = mean_turnover_values[selected_index] * investment_amount
-            st.write(f"Mean Turnover: {mean_turnover:.2f}")
+        
 
             # Spiegazione breve dei termini
             st.write("\n")
             st.write("Mean Tracking Error: Measures the deviation of the replication portfolio's returns from the target index's returns.")
             st.write("Information Ratio: Indicates the risk-adjusted return of the replication portfolio compared to the target index.")
-            st.write("Mean Turnover: Represents the average proportion of the portfolio that is traded over a given period.")
-
 
 if __name__ == "__main__":
     main()
