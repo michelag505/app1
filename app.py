@@ -70,15 +70,6 @@ def main():
             "Monster Index 2": {'CO1': 0.1060, 'DU1': 0, 'ES1': 0.0867, 'GC1': 0, 'NQ1': 0.0518, 'RX1': 0.5355, 'TP1': 0, 'TU2': 0, 'TY1': 0, 'VG1': 0},
         }
 
-        # Mean Turnover values per ogni indice 
-        mean_turnover_values = {
-            "MSCI World AC": 0.006,
-            "MSCI World": 0.0077,
-            "BB Global Bond Agg": 0.0022,
-            "HFRX Index": 0.0036,
-            "Monster Index 1": 0.0049,
-            "Monster Index 2": 0.0056,
-        }
 
         # Calcola l'investimento per ciascun future
         if investment_amount > 0:
