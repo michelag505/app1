@@ -83,19 +83,19 @@ def main():
 
             # Mostra il grafico dei rendimenti dell'indice scelto e della replica
             if selected_index == "MSCI World ":
-                st.image("MXWO_LASSO_COMPARISON.png")
+                st.image("MSCII.png")
                 st.write("Tracking Error: 3.81%")
                 st.write("Information Ratio: 0.01")
             elif selected_index == "BB Global Bond Agg":
-                st.image("LEGATRUU_LASSO_PREDICTION.png")
+                st.image("LEGATRUU.png")
                 st.write("Tracking Error: 3.80%")
                 st.write("Information Ratio: -0.04")
             elif selected_index == "HFRX Index":
-                st.image("HFRLX_ELASTIC_COMPARISON.png")
+                st.image("HFRX.png")
                 st.write("Tracking Error: 4.72%")
                 st.write("Information Ratio: -0.77")
             elif selected_index == "Monster Index 1":
-                st.image("MONSTER1_LASSO_PREDICTION.png")
+                st.image("MonsterIndex1.png")
                 st.write("Tracking Error: 3.34%")
                 st.write("Information Ratio: -0.13")
             elif selected_index == "Monster Index 2":
