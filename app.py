@@ -83,7 +83,7 @@ def main():
 
             # Mostra il grafico dei rendimenti dell'indice scelto e della replica
             if selected_index == "MSCI World ":
-                st.image("MSCw.png")
+                st.image("MSCIworld.png")
                 st.write("Tracking Error: 3.81%")
                 st.write("Information Ratio: 0.01")
             elif selected_index == "BB Global Bond Agg":
