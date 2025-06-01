@@ -67,7 +67,7 @@ def main():
             "BB Global Bond Agg": {'RX1': 0.141810,'TY1': 0.198919,'GC1': 0.113667,'CO1': -0.025174,'ES1': 0.062915,'VG1': -0.066337,'NQ1': 0.004592,'TP1': 0.031359,'DU1': 0.039291,'TU2': -0.005474},
             "HFRX Index": { 'RX1': 0.140715,'TY1': 0.204072,'GC1': -0.010062,'CO1': 0.008248,'ES1': 0.067675,'VG1': -0.051717,'NQ1': 0.021788,'TP1': 0.119898,'DU1': 0.066198,'TU2': -1.688163},
             "Monster Index 1": {'RX1': 0.080728,'TY1': -0.003102,'GC1': 0.080825,'CO1': 0.000983,'ES1': 0.229590,'VG1': -0.012376,'NQ1': 0.054494,'TP1': 0.080853,'DU1': 0.011704,'TU2': 0.000087},
-            "Monster Index 2": {'CO1': 0.1060, 'DU1': 0, 'ES1': 0.0867, 'GC1': 0, 'NQ1': 0.0518, 'RX1': 0.5355, 'TP1': 0, 'TU2': 0, 'TY1': 0, 'VG1': 0},
+            "Monster Index 2": { 'RX1': 0.065566,'TY1': -0.009756,'GC1': 0.081312,'CO1': 0.002029,'ES1': 0.281891,'VG1': 0.036103,'NQ1': 0.080437,'TP1': 0.095376,'DU1': 0.009152,'TU2': -0.000760},
         }
 
 
@@ -99,9 +99,9 @@ def main():
                 st.write("Tracking Error: 3.34%")
                 st.write("Information Ratio: -0.13")
             elif selected_index == "Monster Index 2":
-                st.image("MONSTER2_LASSO_COMPARISON.png")
-                st.write("Tracking Error: 0.030")
-                st.write("Information Ratio: -0.485")
+                st.image("MonsterIndex2.png")
+                st.write("Tracking Error: 3.33%")
+                st.write("Information Ratio: -0.03")
 
         
 
