@@ -2,24 +2,23 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import numpy as np
 
-# Funzione principale
 def main():
-    st.image('Logo_1.png')  # TITLE and Creator information
-    st.write('\n')  # add spacing
+    st.image('Logo_1.png')  
+    st.write('\n')  
     st.markdown('Discover CloneCapital! Our platform offers proprietary algorithms to create synthetic futures contracts that mirror the performance of leading market indices with remarkable accuracy.')
-    st.write('\n')  # add spacing
+    st.write('\n')  
     
-    # Espandi l'introduzione
+    # Expand intro
     with st.expander("About CloneCapital"):
         st.write("""
             Founded in 2025 by four quantitative finance students from Politecnico di Milano, CloneCapital emerged from our shared vision to make sophisticated investment strategies accessible to everyone. Combining our academic expertise in financial modeling with a passion for technological innovation, we've created a platform that bridges the gap between institutional and retail investment capabilities.
               """)
-        # Espandi l'obiettivo
+        # objective
     with st.expander("Our Solution"):
         st.write("""
             CloneCapital offers a unique way to invest in futures contracts that replicate the performance of key indices with unprecedented precision. Our proprietary algorithm enables investors to diversify their portfolios through synthetic positions that track market indices without the traditional barriers to entry. Experience the future of index investing—designed by students who understand both the mathematical complexities of financial markets and the need for intuitive investment solutions.
         """)
-        # Espandi i rendimenti degli indici
+        # indexes
     with st.expander("Overview of the Indices"):
         st.markdown("""
         ### We base our replication strategy on the following indices:
@@ -50,18 +49,18 @@ def main():
         st.write("The chart below visualizes the futures used in the replicating portfolio.")
         st.image("futures55.png")
 
-    # Espandi la scelta dell'indice da replicare
+    # choose index
     with st.expander("Choose Index to Replicate"):
         selected_index = st.selectbox("Select an index to replicate", [ "MSCI World", "BB Global Bond Agg", "HFRX Index", "Monster Index 1", "Monster Index 2"])
 
         st.write(f"## Replication of {selected_index}")
         
-        # Input per investment amount
+        # investment amount
         investment_amount = st.number_input("Enter the principal you want to invest:", min_value=0.0, step=100.0)
         st.write(""" The proposed allocation is valid for a week and will be updated afterwards
         """)
 
-        # Proporzioni di investimento nei futures 
+        # futures ptf
         futures_allocation = {
             "MSCI World": {'RX1': 0.006481,'TY1': -0.025120,'GC1': 0.069007,'CO1': 0.009169,'ES1': 0.427432,'VG1': 0.157822,'NQ1': 0.152566,'TP1': 0.122028,'DU1': 0.002261,'TU2': -0.001807},
             "BB Global Bond Agg": {'RX1': 0.141810,'TY1': 0.198919,'GC1': 0.113667,'CO1': -0.025174,'ES1': 0.062915,'VG1': -0.066337,'NQ1': 0.004592,'TP1': 0.031359,'DU1': 0.039291,'TU2': -0.005474},
@@ -71,7 +70,7 @@ def main():
         }
 
 
-        # Calcola l'investimento per ciascun future
+        # investment amount
         if investment_amount > 0:
             allocations = futures_allocation[selected_index]
             st.write("### Investment Allocation")
@@ -80,7 +79,7 @@ def main():
                 st.write(f"*{future_code}:* {amount_invested:.2f}")
 
 
-            # Mostra il grafico dei rendimenti dell'indice scelto e della replica
+            # replication
             if selected_index == "MSCI World":
                 st.image("MSCIworld.png")
                 st.write("Tracking Error: 3.81%")
@@ -104,7 +103,7 @@ def main():
 
         
 
-            # Spiegazione breve dei termini
+            # metrics
             st.write("\n")
             st.write("Tracking Error: Quantifies how closely the replication portfolio follows the benchmark index by measuring the standard deviation of the difference in their returns over time.")
             st.write("Information Ratio: Evaluates the performance of the replication portfolio relative to the benchmark by dividing the excess return by the tracking error, reflecting how efficiently the portfolio generates active returns.")
