@@ -63,11 +63,10 @@ def main():
 
         # Proporzioni di investimento nei futures 
         futures_allocation = {
-            "MSCI World AC": {'CO1': 0.0658, 'DU1': 0, 'ES1': 0.4981, 'GC1': 0, 'NQ1': 0.0082, 'RX1': 0.2052, 'TP1': 0, 'TU2': 0, 'TY1': 0, 'VG1': 0},
             "MSCI World": {'CO1': 0.0931, 'DU1': 0, 'ES1': 0.4558, 'GC1': 0, 'NQ1': 0.0078, 'RX1': 0.2031, 'TP1': 0, 'TU2': 0, 'TY1': 0, 'VG1': 0},
             "BB Global Bond Agg": {'CO1': 0.0168, 'DU1': 0, 'ES1': 0, 'GC1': 0.2097, 'NQ1': 0.0059, 'RX1': 0.6707, 'TP1': 0, 'TU2': 0, 'TY1': 0, 'VG1': 0},
-            "HFRX Index": {'CO1': 0.0782, 'DU1': 0.0790, 'ES1': 0.0513, 'GC1': 0.0467, 'NQ1': 0, 'RX1': 0.2697, 'TP1': 0.0673, 'TU2': 0.0660, 'TY1': 0.0713, 'VG1': 0},
-            "Monster Index 1": {'CO1': 0.1044, 'DU1': 0, 'ES1': 0, 'GC1': 0, 'NQ1': 0.0508, 'RX1': 0.5973, 'TP1': 0, 'TU2': 0, 'TY1': 0, 'VG1': 0},
+            "HFRX Index": { 'RX1': 0.140715,'TY1': 0.204072,'GC1': -0.010062,'CO1': 0.008248,'ES1': 0.067675,'VG1': -0.051717,'NQ1': 0.021788,'TP1': 0.119898,'DU1': 0.066198,'TU2': -1.688163},
+            "Monster Index 1": {'RX1': 0.080728,'TY1': -0.003102,'GC1': 0.080825,'CO1': 0.000983,'ES1': 0.229590,'VG1': -0.012376,'NQ1': 0.054494,'TP1': 0.080853,'DU1': 0.011704,'TU2': 0.000087},
             "Monster Index 2": {'CO1': 0.1060, 'DU1': 0, 'ES1': 0.0867, 'GC1': 0, 'NQ1': 0.0518, 'RX1': 0.5355, 'TP1': 0, 'TU2': 0, 'TY1': 0, 'VG1': 0},
         }
 
@@ -92,27 +91,23 @@ def main():
             
 
             # Mostra il grafico dei rendimenti dell'indice scelto e della replica
-            if selected_index == "MSCI World AC":
+            if selected_index == "MSCI World ":
                 st.image("MXWO_LASSO_COMPARISON.png")
                 st.write("Mean Tracking Error: 0.0224")
                 st.write("Information Ratio: -0.8347")
-            elif selected_index == "MSCI World":
-                st.image("MXWD_LASSO_PREDICTION.png")
-                st.write("Mean Tracking Error: 0.0352")
-                st.write("Information Ratio: -0.3977")
             elif selected_index == "BB Global Bond Agg":
                 st.image("LEGATRUU_LASSO_PREDICTION.png")
                 st.write("Mean Tracking Error: 0.0366")
                 st.write("Information Ratio: 0.0964")
             elif selected_index == "HFRX Index":
                 st.image("HFRLX_ELASTIC_COMPARISON.png")
-                st.write("Mean Tracking Error: 0.0158")
-                st.write("Information Ratio: -0.3074")
-            elif selected_index == "Monster Index 1":
+                st.write("Mean Tracking Error: 4.72%")
+                st.write("Information Ratio: -0.77")
+            elif selected_index == "MonsterIndex 1":
                 st.image("MONSTER1_LASSO_PREDICTION.png")
-                st.write("Mean Tracking Error: 0.0243")
-                st.write("Information Ratio: -0.6899")
-            elif selected_index == "Monster Index 2":
+                st.write("Mean Tracking Error: 3.34%")
+                st.write("Information Ratio: -0.13")
+            elif selected_index == "MonsterIndex 2":
                 st.image("MONSTER2_LASSO_COMPARISON.png")
                 st.write("Mean Tracking Error: 0.030")
                 st.write("Information Ratio: -0.485")
