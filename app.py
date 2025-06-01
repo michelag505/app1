@@ -103,7 +103,6 @@ def main():
                 st.write("Tracking Error: 0.030")
                 st.write("Information Ratio: -0.485")
 
-            # Calcola e mostra il "Mean Turnover" moltiplicato per l'importo investito
         
 
             # Spiegazione breve dei termini
