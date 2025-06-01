@@ -87,7 +87,7 @@ def main():
                 st.write("Tracking Error: 3.81%")
                 st.write("Information Ratio: 0.01")
             elif selected_index == "BB Global Bond Agg":
-                st.image("LEGATRUU.png")
+                st.image("LEGATURUU.png")
                 st.write("Tracking Error: 3.80%")
                 st.write("Information Ratio: -0.04")
             elif selected_index == "HFRX Index":
