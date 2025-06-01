@@ -52,15 +52,13 @@ def main():
 
     # Espandi la scelta dell'indice da replicare
     with st.expander("Choose Index to Replicate"):
-        selected_index = st.selectbox("Select an index to replicate", ["MSCI World AC", "MSCI World", "BB Global Bond Agg", "HFRX Index", "Monster Index 1", "Monster Index 2"])
+        selected_index = st.selectbox("Select an index to replicate", [ "MSCI World", "BB Global Bond Agg", "HFRX Index", "MonsterIndex 1", "MonsterIndex 2"])
 
         st.write(f"## Replication of {selected_index}")
         
         # Input per investment amount
-        investment_amount = st.number_input("Enter the amount you want to invest in the selected index:", min_value=0.0, step=100.0)
-        st.write("""Note that the replication portfolio might employ leverage or have a lower overall value
-        """)
-        st.write("""The weights are valid for the next 10 weeks and will be updated thereafter
+        investment_amount = st.number_input("Enter the principal you want to invest:", min_value=0.0, step=100.0)
+        st.write(""" The proposed allocation is valid for a week and will be updated afterwards
         """)
 
         # Proporzioni di investimento nei futures 
